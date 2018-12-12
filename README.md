@@ -77,8 +77,6 @@ parser.add_argument(
 [pytorch预训练权重](https://pan.baidu.com/s/17EBrK67D2tiQM5UU5KboRQ)
 
 
-
-# 识别结果展示
 ## 文字检测及OCR识别结果
 ![ctpn原始图像1](./test/ttttt.png)
 `===========================================================`
@@ -88,14 +86,8 @@ parser.add_argument(
 
 主要是因为训练的时候，只包含中文和英文字母，因此很多公式结构是识别不出来的
 
-
-# 未完待续
-```
-可以看到，对于纯文字的识别结果还是阔以的呢，感觉可以在crnn网络在加以改进，现在的crnn中的cnn有点浅，
-并且rnn层为单层双向+attention，目前正在针对这个地方进行改动，使用迁移学习，以restnet为特征提取层，
-使用多层双向动态rnn+attention+ctc的机制，将模型加深。
-```
-
+## 在跑的过程中遇到了问题，请联系
+  邮箱：deamoncao@163.com
 
 ## 参考
 - https://github.com/xiaofengShi/CHINESE-OCR
@@ -105,5 +97,4 @@ parser.add_argument(
 - [tensorflow-ctpn](https://github.com/eragonruan/text-detection-ctpn )
 - [CAFFE-CTPN](https://github.com/tianzhi0549/CTPN)
 
-## 在跑的过程中遇到了问题，请联系
-  邮箱：deamoncao@163.com
+
