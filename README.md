@@ -105,3 +105,5 @@ parser.add_argument(
 - [tensorflow-ctpn](https://github.com/eragonruan/text-detection-ctpn )
 - [CAFFE-CTPN](https://github.com/tianzhi0549/CTPN)
 
+## 在跑的过程中遇到了问题，请联系
+  邮箱：deamoncao@163.com
