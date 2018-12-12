@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-# ocr
-ocr中文识别
-=======
 # 本文基于tensorflow、keras/pytorch实现对自然场景的文字检测及端到端的OCR中文文字识别
 
 # 功能
@@ -51,9 +47,9 @@ pip3 install torch torchvision
 
 # 使用
 ## 体验
-```
+
 运行demo.py  写入测试图片的路径即可，如果想要显示ctpn的结果，修改文件./ctpn/ctpn/other.py 的draw_boxes函数的最后部分，cv2.inwrite('dest_path',img)，如此，可以得到ctpn检测的文字区域框以及图像的ocr识别结果
-```
+* 在进行体验的时候，注意要更改里面的一些内容（比如模型文件等）
 ## 模型训练
 ### 1 对ctpn进行训练
 * 定位到路径--./ctpn/ctpn/train_net.py
@@ -82,7 +78,6 @@ parser.add_argument(
 
 
 
-
 # 识别结果展示
 ## 文字检测及OCR识别结果
 ![ctpn原始图像1](./test/ttttt.png)
@@ -92,15 +87,9 @@ parser.add_argument(
 ![ctpn+crnn结果1](./test/ttttt_result.png)
 
 主要是因为训练的时候，只包含中文和英文字母，因此很多公式结构是识别不出来的
-### 看看纯文字的
-![ctpn原始图像2](./test/test.png)
-`===========================================================`
-![ctpn检测2](./test/test_pre.png)
-`===========================================================`
-![ctpn+crnn结果2](./test/test_result.png)
+
 
 # 未完待续
-### tensorflow版本crnn，计划尝试当前的各种trick(dropuout,bn,learning_decay等)
 ```
 可以看到，对于纯文字的识别结果还是阔以的呢，感觉可以在crnn网络在加以改进，现在的crnn中的cnn有点浅，
 并且rnn层为单层双向+attention，目前正在针对这个地方进行改动，使用迁移学习，以restnet为特征提取层，
@@ -119,4 +108,3 @@ parser.add_argument(
 - [tensorflow-ctpn](https://github.com/eragonruan/text-detection-ctpn )
 - [CAFFE-CTPN](https://github.com/tianzhi0549/CTPN)
 
->>>>>>> first commit
