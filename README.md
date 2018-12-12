@@ -84,7 +84,7 @@ parser.add_argument(
 `===========================================================`
 ![ctpn检测1](./test/test1.png)
 `===========================================================`
-![ctpn+crnn结果1](./test/ttttt_result.png)
+![ctpn+crnn结果1](./test/ttttttxt_result.PNG)
 
 主要是因为训练的时候，只包含中文和英文字母，因此很多公式结构是识别不出来的
 
@@ -95,9 +95,6 @@ parser.add_argument(
 并且rnn层为单层双向+attention，目前正在针对这个地方进行改动，使用迁移学习，以restnet为特征提取层，
 使用多层双向动态rnn+attention+ctc的机制，将模型加深。
 ```
-
-
-
 
 
 ## 参考
