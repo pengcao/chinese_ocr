@@ -1,7 +1,7 @@
 # 本文基于tensorflow、keras/pytorch实现对自然场景的文字检测及端到端的OCR中文文字识别
 
 # 功能
-- 文字检测 后期将切换到keras版本文本检测 实现keras端到端的文本检测及识别（项目里面有两个模型keras和pytorch。）
+- 文字检测 实现keras端到端的文本检测及识别（项目里面有两个模型keras和pytorch。）
 - 不定长OCR识别
 
 
