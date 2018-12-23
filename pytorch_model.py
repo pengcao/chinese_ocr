@@ -15,7 +15,6 @@ from ctpn.text_detect import text_detect
 def crnnRec(im, text_recs, adjust=False):
     """
     crnn模型，ocr识别
-    @@model,
     @@converter,
     @@im:Array
     @@text_recs:text box
@@ -92,7 +91,7 @@ def model(img, adjust=False, detectAngle=False):
 
     text_recs, tmp, img = text_detect(img)
     text_recs = sort_box(text_recs)
-    result = crnnRec(img, text_recs, model, adjust=adjust)
+    result = crnnRec(img, text_recs, adjust=adjust)
     return result, tmp, angle
 
 
