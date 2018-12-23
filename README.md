@@ -9,9 +9,8 @@
 ``` 
 Bash
 ##GPU环境
-sh setup-conda-gpu.sh
-##CPU环境
-sh setup-python2-cpu.sh
+sh setup-python3-gpu.sh
+
 ##CPU python3环境
 sh setup-python3-cpu.sh
 
@@ -48,7 +47,7 @@ pip3 install torch torchvision
 # 使用
 ## 体验
 
-运行demo.py  写入测试图片的路径即可，如果想要显示ctpn的结果，修改文件./ctpn/ctpn/other.py 的draw_boxes函数的最后部分，cv2.inwrite('dest_path',img)，如此，可以得到ctpn检测的文字区域框以及图像的ocr识别结果
+运行demo.py或者pytorch_demo.py（建议）  写入测试图片的路径即可，如果想要显示ctpn的结果，修改文件./ctpn/ctpn/other.py 的draw_boxes函数的最后部分，cv2.inwrite('dest_path',img)，如此，可以得到ctpn检测的文字区域框以及图像的ocr识别结果
 * 在进行体验的时候，注意要更改里面的一些内容（比如模型文件等）
 ## 模型训练
 ### 1 对ctpn进行训练
