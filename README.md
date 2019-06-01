@@ -33,7 +33,7 @@ pip3 install torch torchvision
 基于图像分类，在VGG16模型的基础上，训练0、90、180、270度检测的分类模型.
 详细代码参考angle/predict.py文件，训练图片8000张，准确率88.23%
 ```
-模型地址[BaiduCloud](https://pan.baidu.com/s/1ZxCtfYA24OTxFPVdUjQHtw)
+模型地址[BaiduCloud](链接：https://pan.baidu.com/s/1Sqbnoeh1lCMmtp64XBaK9w 提取码：n2v4)
 
 # 文字区域检测CTPN
 支持CPU、GPU环境，一键部署，
@@ -52,16 +52,16 @@ pip3 install torch torchvision
 ## 模型训练
 ### 1 对ctpn进行训练
 * 定位到路径--./ctpn/ctpn/train_net.py
-* 预训练的vgg网络路径[VGG_imagenet.npy](https://pan.baidu.com/s/1JB15vCByczaSc3rSulCj5g)
+* 预训练的vgg网络路径[VGG_imagenet.npy](链接：https://pan.baidu.com/s/1jzrcCr0tX6xAiVoolVRyew 提取码：a5ze )
 将预训练权重下载下来，pretrained_model指向该路径即可,
-此外整个模型的预训练权重[checkpoint](https://pan.baidu.com/s/1nFHqw0gp0znObs-5OnyrJw)
+此外整个模型的预训练权重[checkpoint](链接：https://pan.baidu.com/s/1oS6_kqHgmcunkooTAXE8GA 提取码：xmjv )
 * ctpn数据集[还是百度云](https://pan.baidu.com/s/1TzJDcCNlDQVr3GGT1IDhQQ)
 数据集下载完成并解压后，将.ctpn/lib/datasets/pascal_voc.py 文件中的pascal_voc 类中的参数self.devkit_path指向数据集的路径即可
 
 ### 2 对crnn进行训练
 * keras版本 ./train/keras_train/train_batch.py  model_path--指向预训练权重位置 
 MODEL_PATH---指向模型训练保存的位置
-[keras模型预训练权重](https://pan.baidu.com/s/1vm8NN_Bvsu96_sPJiAWA-Q)
+[keras模型预训练权重](链接：https://pan.baidu.com/s/14cTCedz1ESnj0mM9ISm__w 提取码：1kb9)
 * pythorch版本./train/pytorch-train/crnn_main.py
 ```
 parser.add_argument(
@@ -73,7 +73,7 @@ parser.add_argument(
     help='Where to store samples and models',
     default=模型训练的权重保存位置,这个自己指定)
 ```
-[pytorch预训练权重](https://pan.baidu.com/s/17EBrK67D2tiQM5UU5KboRQ)
+[pytorch预训练权重](链接：https://pan.baidu.com/s/1kAXKudJLqJbEKfGcJUMVtw 提取码：9six)
 
 
 ## 文字检测及OCR识别结果
